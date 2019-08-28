@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-lg   static-top">
     <div class="container">
       <div class="text-center">
-        <a class="navbar-brand ml-5" href="#">
+        <a class="navbar-brand " href="#">
           <img alt="imagen-resposive" class="img-fluid" src="../assets/images/logo.PNG" alt="">
         </a>
       </div>
@@ -13,40 +13,53 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <div class="col-md-12 col-xs-12 col-xl-12 col-lg-12 col-sm-12">
 
-          <!--- <ul class="navbar-nav">
+         <ul class="navbar-nav nav footer-main-links row text-center text-uppercase">
 
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home
-                </a>
+          <li class=" active nav-item col-6 col-xs col-md" >
+            <button [routerLink]="['/home']" routerLinkActive="active" class="nav-item" href="#"> <i class="fa fa-home" aria-hidden="true"></i>
+              <div class="form-group"></div>
+              Home
+                </button>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Message</a>
+          <li class="nav-item col-6 col-xs col-md">
+            <button [routerLink]="['/message']" routerLinkActive="active" class="nav-item" href="#"> <i class="fa fa-envelope-o" aria-hidden="true"></i>
+              <div class="form-group"></div>
+
+              Message</button>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Wishlist</a>
+          <li class="nav-item col-6 col-xs col-md">
+            <button  [routerLink]="['/wishlist']" routerLinkActive="active" class="nav-item" href="#"> <i class="fa fa-star" aria-hidden="true"></i>
+              <div class="form-group"></div>
+
+              Wishlist</button>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
+          <li class="nav-item col-6 col-xs col-md">
+              <button [routerLink]="['/settings']" routerLinkActive="active" class="nav-item" href="#"> <i class="fa fa-cog" aria-hidden="true"></i>
+                <div class="form-group"></div>
+
+                Settings</button>
+            </li>
+          <li class="nav-item col-6 col-xs col-md">
+              <button [routerLink]="['/account']" routerLinkActive="active" class="nav-item" href="#"> <i class="fa fa-user" aria-hidden="true"></i>
+                <div class="form-group"></div>
+                My Account</button>
+            </li>
         </ul>
-        -->
 
-          <div class="btn-group" role="group" aria-label="Basic example">
-
-           
-              <button mat-raised-button color="primary">Primary</button>
-
-              <button mat-raised-button color="primary">Primary</button>
-        
-              <button mat-raised-button color="primary">Primary</button>
-        
-              <button mat-raised-button color="primary">Primary</button>
-
-          </div>
         </div>
 
       </div>
     </div>
   </nav>
 </div>
-<app-filters></app-filters>
+
+
+<div class="container-fluit">
+    <router-outlet></router-outlet>
+
+  </div>
+<!--
+<app-filters>
+  </app-filters> -->
+
+

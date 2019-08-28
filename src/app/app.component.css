@@ -10,3 +10,18 @@
   border-right:  solid gray;
 
 }
+
+.buton{
+  background-color: #ffffff;
+  border: 0.063em solid #6d6d6d;
+  box-shadow: 0 0.063em 0.063em #1b1b1b;
+  color: red;
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  padding: 1.925em;
+  padding-left: 5em;
+  padding-right: 5em;
+  transition: background-color 0.1s, transform 0.1s;
+
+}
