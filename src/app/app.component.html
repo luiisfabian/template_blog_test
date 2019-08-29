@@ -1,64 +1,79 @@
 <div class="container-fluid">
-  <nav class="navbar navbar-expand-lg   static-top">
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-      <div class="text-center">
-        <a class="navbar-brand " href="#">
+
+      <a class="navbar-brand" href="#">
+        <div class="text-center">
+
           <img alt="imagen-resposive" class="img-fluid" src="../assets/images/logo.PNG" alt="">
-        </a>
-      </div>
+        </div>
+
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
-        <div class="col-md-12 col-xs-12 col-xl-12 col-lg-12 col-sm-12">
+        <div class="col-md-10 col-xs-10 col-xl-10 col-lg-10 col-sm-10">
 
-         <ul class="navbar-nav nav footer-main-links row text-center text-uppercase">
+          <ul class="navbar-nav navbar-expand-xl  text-center text-uppercase"> 
+              <div class="col-2"></div>
 
-          <li class=" active nav-item col-6 col-xs col-md" >
-            <button [routerLink]="['/home']" routerLinkActive="active" class="nav-item" href="#"> <i class="fa fa-home" aria-hidden="true"></i>
-              <div class="form-group"></div>
-              Home
-                </button>
-          </li>
-          <li class="nav-item col-6 col-xs col-md">
-            <button [routerLink]="['/message']" routerLinkActive="active" class="nav-item" href="#"> <i class="fa fa-envelope-o" aria-hidden="true"></i>
-              <div class="form-group"></div>
-
-              Message</button>
-          </li>
-          <li class="nav-item col-6 col-xs col-md">
-            <button  [routerLink]="['/wishlist']" routerLinkActive="active" class="nav-item" href="#"> <i class="fa fa-star" aria-hidden="true"></i>
-              <div class="form-group"></div>
-
-              Wishlist</button>
-          </li>
-          <li class="nav-item col-6 col-xs col-md">
-              <button [routerLink]="['/settings']" routerLinkActive="active" class="nav-item" href="#"> <i class="fa fa-cog" aria-hidden="true"></i>
+            <li class="nav-item col-2">
+              <a [routerLink]="['/home']" routerLinkActive="active" class="nav-link" > <i class="fa fa-home"
+                  aria-hidden="true"></i>
                 <div class="form-group"></div>
-                Settings</button>
+                Home
+              </a>
             </li>
-          <li class="nav-item col-6 col-xs col-md">
-              <button [routerLink]="['/account']" routerLinkActive="active" class="nav-item" href="#"> <i class="fa fa-user" aria-hidden="true"></i>
+            <li class="nav-item col-2">
+              <a [routerLink]="['/message']" routerLinkActive="active" class="nav-link" > <i
+                  class="fa fa-envelope-o" aria-hidden="true"></i>
                 <div class="form-group"></div>
-                My Account</button>
+                Message
+              </a>
             </li>
-        </ul>
+            <li class="nav-item col-2">
+              <a [routerLink]="['/wishlist']" routerLinkActive="active" class="nav-link"> <i class="fa fa-star"
+                  aria-hidden="true"></i>
+                <div class="form-group"></div>
+
+                Wishlist
+              </a>
+            </li>
+            <li class="nav-item col-2">
+              <a [routerLink]="['/settings']" routerLinkActive="active" class="nav-link"> <i class="fa fa-cog"
+                  aria-hidden="true"></i>
+                <div class="form-group"></div>
+                Settings
+              </a>
+            </li>
+            <li class="nav-item col-2">
+              <a [routerLink]="['/account']" routerLinkActive="active" class="nav-link" > <i class="fa fa-user"
+                  aria-hidden="true"></i>
+                <div class="form-group"></div>
+                My Account
+              </a>
+            </li>
+          </ul>
 
         </div>
 
       </div>
+
     </div>
   </nav>
+  <router-outlet></router-outlet>
+
 </div>
 
 
-<div class="container-fluit">
-    <router-outlet></router-outlet>
 
-  </div>
+
+
+
 <!--
 <app-filters>
   </app-filters> -->
-
-
