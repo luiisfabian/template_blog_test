@@ -6,7 +6,10 @@ import {MatTableDataSource} from '@angular/material/table';
 
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  {position: 1, name: 'Monday 10 2:26 pm', street: 'VR sad as', icon: 'fa fa-truck', price: '$250.0', quantity: 1},
+  {position: 1, name: 'Monday 10 2:26 pm', street: 'VR sad as', icon: 'fa fa-truck', price: 331.232 , quantity: 1},
+  {position: 2, name: 'Monday 10 2:26 pm', street: 'VR sad as', icon: 'fa fa-truck', price: 331.232 , quantity: 1},
+  {position: 3, name: 'Monday 10 2:26 pm', street: 'VR sad as', icon: 'fa fa-truck', price: 331.232 , quantity: 1},
+  {position: 4, name: 'Monday 10 2:26 pm', street: 'VR sad as', icon: 'fa fa-truck', price: 331.232 , quantity: 1},
 
 ];
 @Component({

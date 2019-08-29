@@ -4,6 +4,6 @@ export interface PeriodicElement {
   position: number;
   street: string;
   icon: string;
-  price: string;
+  price: number;
   quantity: number;
 }
