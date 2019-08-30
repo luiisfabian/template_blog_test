@@ -13,7 +13,7 @@
 
 
 
-          <h5 class="title"><i class="fa fa-lightbulb-o p-1" aria-hidden="true"></i>Smart Filters</h5>
+          <h5 class="title"><i class="fa fa-lightbulb-o " aria-hidden="true"></i>Smart Filters</h5>
           <hr class="ray">
         </div>
         <div class="col-md-12 col-xs-12 col-xl-12 col-lg-12 col-sm-12">
@@ -23,7 +23,7 @@
                 <img alt="imagen-resposive" class="img-fluid" src="../assets/images/sale.png" alt="">
               </div>
             </div>
-            <div class="col-6">
+            <div class="col-6 text-center">
               <mat-card-content>
                 <section class="example-section">
                   <mat-slide-toggle class="example-margin" color="primary" checked="false" disabled="false">
@@ -42,7 +42,7 @@
                 <img alt="imagen-resposive" class="img-fluid" src="../assets/images/calendar.png" alt="">
               </div>
             </div>
-            <div class="col-6">
+            <div class="col-6 text-center" >
               <mat-card-content>
                 <section class="example-section">
                   <mat-slide-toggle class="example-margin" color="primary" checked="false" disabled="false">
@@ -60,7 +60,7 @@
                 <img alt="imagen-resposive" class="img-fluid" src="../assets/images/hear.png" alt="">
               </div>
             </div>
-            <div class="col-6">
+            <div class="col-6 text-center">
               <mat-card-content>
                 <section class="example-section">
                   <mat-slide-toggle class="example-margin" color="primary" checked="false" disabled="false">
@@ -81,11 +81,13 @@
         <div class="row">
           <div class="col-md-12 col-xs-12 col-xl-12 col-lg-12 col-sm-12">
             <div class="col-md-3 col-xs-12 col-xl-3 col-lg-3 col-sm-3">
-
-              <form class="form-inline my-2 my-lg-0 text-center">
+              <div class="text-center">    
+                          <form class="form-inline  my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="&#xF002; Search" aria-label="Search">
+              
 
               </form>
+            </div>
             </div>
           </div>
         </div>
@@ -111,14 +113,16 @@
                   <mat-checkbox (change)="$event ? masterToggle() : null"
                                 [checked]="selection.hasValue() && isAllSelected()"
                                 [indeterminate]="selection.hasValue() && !isAllSelected()"
-                                [aria-label]="checkboxLabel()">
+                                [aria-label]="checkboxLabel()"
+                                color="warn">
                   </mat-checkbox>
                 </th>
                 <td mat-cell *matCellDef="let row">
                   <mat-checkbox (click)="$event.stopPropagation()"
                                 (change)="$event ? selection.toggle(row) : null"
                                 [checked]="selection.isSelected(row)"
-                                [aria-label]="checkboxLabel(row)">
+                                [aria-label]="checkboxLabel(row)"
+                                color="warn">
                   </mat-checkbox>
                 </td>
               </ng-container>

@@ -1,3 +1,17 @@
 table{
-  width: 100%;
+  width: 80%;
  }
+
+ 
+.ray{
+  size: 25px;
+  color: gray;
+}
+
+.rar2{
+  height: 100%;
+  color: gray;
+  border-right:  solid gray;
+
+}
+
