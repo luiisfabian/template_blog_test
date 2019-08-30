@@ -1,18 +1,21 @@
 
 .nav-item:active li  {
-  color: white;
+  color: #193948;
   
+}
+
+.nav-item .active{
+  background-color: #193948;
 }
 
 .nav-item{
   background-color: #ffffff;
-  border: 0.1em solid #193948;
-  box-shadow: 0 0.063em 0.063em #193948;
+  border: #193948;
+  box-shadow: #193948;
   color: #ffffff;
   cursor: default;
   display: flex;
   flex-direction: column;
-  padding-right: 135px;
  /*  transition: background-color s, transform 0.1s; */
 
 }
