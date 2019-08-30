@@ -13,6 +13,7 @@ import { WishlistComponent } from './wishlist/wishlist.component';
 import { SettingsComponent } from './settings/settings.component';
 import { AccountComponent } from './account/account.component';
 
+import bootstrap from 'bootstrap';
 
 @NgModule({
   declarations: [
