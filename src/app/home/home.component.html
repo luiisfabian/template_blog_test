@@ -1,18 +1,10 @@
 <div class="container-fluid">
   <div class="col-md-12 col-xs-12 col-xl-12 col-lg-12 col-sm-12 ml-5">
-
-
     <div class="row">
-
       <div class="col-md-2 col-xs-12 col-xl-2 col-lg-2 col-sm-2 ml-2 mr-3">
-
-
         <div class="text-center">
           <div class="form-group"></div>
           <div class="form-group"></div>
-
-
-
           <h5 class="title"><i class="fa fa-lightbulb-o " aria-hidden="true"></i>Smart Filters</h5>
           <hr class="ray">
         </div>
@@ -32,17 +24,14 @@
               </mat-card-content>
             </div>
           </div>
-
-
           <div class="form-group"></div>
           <div class="row">
             <div class="col-6">
-
               <div class="text-center">
                 <img alt="imagen-resposive" class="img-fluid" src="../assets/images/calendar.png" alt="">
               </div>
             </div>
-            <div class="col-6 text-center" >
+            <div class="col-6 text-center">
               <mat-card-content>
                 <section class="example-section">
                   <mat-slide-toggle class="example-margin" color="primary" checked="false" disabled="false">
@@ -51,8 +40,6 @@
               </mat-card-content>
             </div>
           </div>
-
-
           <div class="form-group"></div>
           <div class="row">
             <div class="col-6">
@@ -74,20 +61,17 @@
         <hr class="ray">
         <div class="text-center">
           <h5 class="title">Status</h5>
-
         </div>
         <div class="form-group"></div>
-
         <div class="row">
           <div class="col-md-12 col-xs-12 col-xl-12 col-lg-12 col-sm-12">
-            <div class="col-md-3 col-xs-12 col-xl-3 col-lg-3 col-sm-3">
+            <div class="col-md-2 col-xs-12 col-xl-2 col-lg-2 col-sm-2">
               <div class="text-center">
-                          <form class="form-inline  my-lg-0">
-                <input class="form-control mr-sm-1 text center" type="search" placeholder="&#xF002; Search" aria-label="Search">
-
-
-              </form>
-            </div>
+                <form class="form-inline  my-lg-0">
+                  <input class="form-control  text center" type="search" placeholder="&#xF002; Search"
+                    aria-label="Search">
+                </form>
+              </div>
             </div>
           </div>
         </div>
@@ -103,26 +87,22 @@
 
       </div>
       <div class="col-md-8 col-xs-12 col-xl-8 col-lg-8 col-sm-8">
-          <div class="row">
+        <div class="row">
 
-            <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
-
+          <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+            <div class="text-center">
               <!-- Checkbox Column -->
               <ng-container matColumnDef="select">
                 <th mat-header-cell *matHeaderCellDef>
                   <mat-checkbox (change)="$event ? masterToggle() : null"
-                                [checked]="selection.hasValue() && isAllSelected()"
-                                [indeterminate]="selection.hasValue() && !isAllSelected()"
-                                [aria-label]="checkboxLabel()"
-                                color="warn">
+                    [checked]="selection.hasValue() && isAllSelected()"
+                    [indeterminate]="selection.hasValue() && !isAllSelected()" [aria-label]="checkboxLabel()"
+                    color="warn">
                   </mat-checkbox>
                 </th>
                 <td mat-cell *matCellDef="let row">
-                  <mat-checkbox (click)="$event.stopPropagation()"
-                                (change)="$event ? selection.toggle(row) : null"
-                                [checked]="selection.isSelected(row)"
-                                [aria-label]="checkboxLabel(row)"
-                                color="warn">
+                  <mat-checkbox (click)="$event.stopPropagation()" (change)="$event ? selection.toggle(row) : null"
+                    [checked]="selection.isSelected(row)" [aria-label]="checkboxLabel(row)" color="warn">
                   </mat-checkbox>
                 </td>
               </ng-container>
@@ -134,54 +114,45 @@
               </ng-container>
 
               <!-- Name Column -->
-              <ng-container matColumnDef="day">
+              <ng-container matColumnDef="day" class="text-center">
                 <th mat-header-cell *matHeaderCellDef> Day </th>
                 <td mat-cell *matCellDef="let element"> {{element.name}} </td>
               </ng-container>
 
               <!-- Weight Column -->
-              <ng-container matColumnDef="street">
+              <ng-container matColumnDef="street" class="text-center">
                 <th mat-header-cell *matHeaderCellDef> Street </th>
                 <td mat-cell *matCellDef="let element"> {{element.street}} </td>
               </ng-container>
 
               <!-- Symbol Column -->
-              <ng-container matColumnDef="icon">
+              <ng-container matColumnDef="icon" class="text-center">
                 <th mat-header-cell *matHeaderCellDef> Icon </th>
                 <td mat-cell *matCellDef="let element">
-                    <i class="{{element.icon}}" aria-hidden="true"></i>
-
-                   </td>
+                  <i class="{{element.icon}}" aria-hidden="true"></i>
+                </td>
               </ng-container>
 
-                <!-- Symbol Column -->
-                <ng-container matColumnDef="price">
-                  <th mat-header-cell *matHeaderCellDef> Price </th>
-                  <td mat-cell *matCellDef="let element"> $ {{element.price}} </td>
-                </ng-container>
+              <!-- Symbol Column -->
+              <ng-container matColumnDef="price" class="text-center">
+                <th mat-header-cell *matHeaderCellDef> Price </th>
+                <td mat-cell *matCellDef="let element"> $ {{element.price}} </td>
+              </ng-container>
 
-                    <!-- Symbol Column -->
-                    <ng-container matColumnDef="quantity">
-                      <th mat-header-cell *matHeaderCellDef> Quantity </th>
-                      <td mat-cell *matCellDef="let element"> {{element.quantity}} </td>
-                    </ng-container>
+              <!-- Symbol Column -->
+              <ng-container matColumnDef="quantity" class="text-center">
+                <th mat-header-cell *matHeaderCellDef> Quantity </th>
+                <td mat-cell *matCellDef="let element"> {{element.quantity}} </td>
+              </ng-container>
 
 
               <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-              <tr mat-row *matRowDef="let row; columns: displayedColumns;"
-                  (click)="selection.toggle(row)">
+              <tr mat-row *matRowDef="let row; columns: displayedColumns;" (click)="selection.toggle(row)">
               </tr>
-            </table>
-
-          </div>
+            </div>
+          </table>
         </div>
-
-
-
-
-
+      </div>
     </div>
-
-
   </div>
 </div>

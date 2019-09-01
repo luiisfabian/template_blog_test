@@ -1,8 +1,14 @@
 table{
-  width: 80%;
+  width: 100%;
  }
+ th.mat-header-cell {
+  text-align: center !important;
+}
+td.mat-cell-cell {
+  text-align: center !important;
+}
 
- 
+
 .ray{
   size: 25px;
   color: gray;
