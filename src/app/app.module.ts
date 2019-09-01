@@ -23,7 +23,7 @@ import bootstrap from 'bootstrap';
     MessageComponent,
     WishlistComponent,
     SettingsComponent,
-    AccountComponent
+    AccountComponent,
   ],
   imports: [
     BrowserModule,

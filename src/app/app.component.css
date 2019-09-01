@@ -1,13 +1,46 @@
+/*
+.nav-item:active  {
+  color: #ffffff;
+  background-color: #193948;
+} */
 
-.nav-item:active li  {
-  color: #193948;
-  
+.nav-link{
+  color: #ffffff;
+  background-color: #ffffff;
 }
-
-.nav-item .active{
+.nav-link:hover {
+  color: #ffffff;
   background-color: #193948;
 }
+.nav-link:active{
+  color: #ffffff;
+  background-color: #193948;
+}
+.nav-link:target {
+  color: #ffffff;
+  background-color: #ffffff;
+}
 
+.active{
+  background-color: #193948;
+  color: #ffffff;
+}
+
+.active.a{
+  color: #ffffff;
+  background-color: #193948;
+
+
+}
+
+
+/*
+.nav-item :active{
+  background-color: #193948;
+  color: #ffffff;
+
+}
+ *
 .nav-item{
   background-color: #ffffff;
   border: #193948;
@@ -16,40 +49,36 @@
   cursor: default;
   display: flex;
   flex-direction: column;
- /*  transition: background-color s, transform 0.1s; */
-
+ /*  transition: background-color s, transform 0.1s;
 }
-/* 
+/*
 .nav-item:hover {
   box-shadow: 0 0.125em 0.125em #193948;
   color: #ffffff;
   background-color: #193948;
  transform: translate(0, -0.063em);
 }
- */
+
 
 .nav-item:link {
-  /* style links */
-  color: white;
+  color: #ffffff;
   background-color: #193948;
-  
-  
+
+
 }
 
 .nav-item:visited {
-  /* style visited link */
-  color: white;
+  color: #ffffff;
   background-color: #193948;
-  
+
 }
 
 .nav-item:hover {
-  /* hover styles */
-  color: white;
+  color: #ffffff;
   background-color: #193948;
-  
-  
-}
+
+
+}*/
 
 
 
